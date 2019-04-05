@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Editar Nota Tarea Creada Profesor1]" parallel="tests">
+  <parameter name="Username" value="profe.qa01-auto@grupo-sm.com"/>
+  <parameter name="Password" value="12345"/>
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="url" value="http://es-login.smsavia.com/"/>
+  <test name="Edit nota(failed)" parallel="tests">
+    <parameter name="Password" value="12345"/>
+    <parameter name="Username" value="profe.qa01-auto@grupo-sm.com"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="http://es-login.smsavia.com/"/>
+    <classes>
+      <class name="comPageObjectsTestSaviaDigital.EditarNotaTareaCreadaProfesor1">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="afterTest"/>
+          <include name="EditarNota" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarNotaTareaCreadaProfesor1 -->
+    </classes>
+  </test> <!-- Edit nota(failed) -->
+</suite> <!-- Failed suite [Editar Nota Tarea Creada Profesor1] -->

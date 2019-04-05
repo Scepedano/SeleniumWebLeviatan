@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Ejecucion de la categoria PAsos Previos]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="CambiarIdiomaProfesor FireFox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="comPageObjectstestSmConectados.ModificarDatos">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectstestSmConectados.ModificarDatos -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarIdioma">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarIdioma -->
+      <class name="comPageObjectsTestSaviaDigital.EditarPerfil">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarPerfil -->
+      <class name="comPageObjectstestSmConectados.CambiarIdiomaProfesor">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="cambiaridioma"/>
+        </methods>
+      </class> <!-- comPageObjectstestSmConectados.CambiarIdiomaProfesor -->
+    </classes>
+  </test> <!-- CambiarIdiomaProfesor FireFox(failed) -->
+  <test name="ModificarDatos FireFox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="comPageObjectstestSmConectados.ModificarDatos">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="ModificarDatosUsuario"/>
+        </methods>
+      </class> <!-- comPageObjectstestSmConectados.ModificarDatos -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarIdioma">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarIdioma -->
+      <class name="comPageObjectsTestSaviaDigital.EditarPerfil">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarPerfil -->
+      <class name="comPageObjectstestSmConectados.CambiarIdiomaProfesor">
+        <methods>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectstestSmConectados.CambiarIdiomaProfesor -->
+    </classes>
+  </test> <!-- ModificarDatos FireFox(failed) -->
+  <test name="MOOD11 FireFox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="comPageObjectstestSmConectados.ModificarDatos">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectstestSmConectados.ModificarDatos -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarIdioma">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarIdioma -->
+      <class name="comPageObjectsTestSaviaDigital.EditarPerfil">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="MoficarPerfil"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarPerfil -->
+      <class name="comPageObjectstestSmConectados.CambiarIdiomaProfesor">
+        <methods>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectstestSmConectados.CambiarIdiomaProfesor -->
+    </classes>
+  </test> <!-- MOOD11 FireFox(failed) -->
+</suite> <!-- Failed suite [Ejecucion de la categoria PAsos Previos] -->

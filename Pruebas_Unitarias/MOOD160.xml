@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel test runs" parallel="tests" thread-count="1">
+	<test name="EntregarGaleria">
+		<parameter name="browser" value="firefox" />
+		<parameter name="platform" value="windows" />
+		<parameter name="url" value="http://es-login.smsavia.com/" />
+		<parameter name="Username" value="alumno.qa01-auto" />
+		<parameter name="Password" value="12345" />
+		<classes>
+			<class name="comPageObjectsTestSaviaDigital.VerImagenGaleria" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Parallel test runs]" parallel="tests">
+  <parameter name="platform" value="windows"/>
+  <parameter name="Username" value="alumno.qa01-auto"/>
+  <parameter name="Password" value="12345"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="http://es-login.smsavia.com/"/>
+  <test name="EntregarGaleria(failed)" parallel="tests">
+    <parameter name="platform" value="windows"/>
+    <parameter name="Password" value="12345"/>
+    <parameter name="Username" value="alumno.qa01-auto"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://es-login.smsavia.com/"/>
+    <classes>
+      <class name="comPageObjectsTestSaviaDigital.EntregarGaleria">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="EntregarGalerias" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EntregarGaleria -->
+    </classes>
+  </test> <!-- EntregarGaleria(failed) -->
+</suite> <!-- Failed suite [Parallel test runs] -->

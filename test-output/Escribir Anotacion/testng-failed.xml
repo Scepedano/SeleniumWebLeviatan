@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Escribir Anotacion]" parallel="tests">
+  <parameter name="Username" value="alumno.qa01-auto"/>
+  <parameter name="Password" value="12345"/>
+  <parameter name="browser" value="FireFox"/>
+  <parameter name="url" value="http://es-login.smsavia.com/"/>
+  <test name="Anotacion en la tarea FireFox Test(failed)" parallel="tests">
+    <parameter name="Password" value="12345"/>
+    <parameter name="Username" value="alumno.qa01-auto"/>
+    <parameter name="browser" value="FireFox"/>
+    <parameter name="url" value="http://es-login.smsavia.com/"/>
+    <classes>
+      <class name="comPageObjectsTestSaviaDigital.VerAnotacionTareaRealizada">
+        <methods>
+          <include name="VerAnotacion" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VerAnotacionTareaRealizada -->
+    </classes>
+  </test> <!-- Anotacion en la tarea FireFox Test(failed) -->
+</suite> <!-- Failed suite [Escribir Anotacion] -->

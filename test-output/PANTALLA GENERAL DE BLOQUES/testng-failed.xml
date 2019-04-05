@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [PANTALLA GENERAL DE BLOQUES]" parallel="tests">
+  <parameter name="platform" value="windows"/>
+  <parameter name="Username" value="alumno.qa01-auto"/>
+  <parameter name="Password" value="12345"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="http://es-login.smsavia.com/"/>
+  <test name="Anotaciones(failed)" parallel="tests">
+    <parameter name="platform" value="windows"/>
+    <parameter name="Password" value="12345"/>
+    <parameter name="Username" value="profe.qa01-auto@grupo-sm.com"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://es-login.smsavia.com/"/>
+    <classes>
+      <class name="comPageObjectsTestSaviaDigital.VolverAlGrupo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VolverAlGrupo -->
+      <class name="comPageObjectsTestSaviaDigital.PantallaGrupos">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.PantallaGrupos -->
+      <class name="comPageObjectsTestSaviaDigital.OtrosBloquesProfesor">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.OtrosBloquesProfesor -->
+      <class name="comPageObjectsTestSaviaDigital.DesplegableUnidades">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.DesplegableUnidades -->
+      <class name="comPageObjectsTestSaviaDigital.AbriryDescargarRecursos">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AbriryDescargarRecursos -->
+      <class name="comPageObjectsTestSaviaDigital.AniadirAnotacion">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AniadirAnotacion -->
+      <class name="comPageObjectsTestSaviaDigital.NavegarUnidadesAlumno">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.NavegarUnidadesAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.CompararTituloLibro_Profesor">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.CompararTituloLibro_Profesor -->
+      <class name="comPageObjectsTestSaviaDigital.CuadernoAlumno">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.CuadernoAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.EditarGrupo">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarGrupo -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarLibroAlumno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarLibroAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.NotasCuadernoAlumno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.NotasCuadernoAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.MostrarRecursosProfesor">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.MostrarRecursosProfesor -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarLibroProfesor">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarLibroProfesor -->
+      <class name="comPageObjectsTestSaviaDigital.CompararTituloLibro_Alumno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.CompararTituloLibro_Alumno -->
+      <class name="comPageObjectsTestSaviaDigital.OtrosBloquesAlumno">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.OtrosBloquesAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.BorrarAnotacion">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.BorrarAnotacion -->
+      <class name="comPageObjectsTestSaviaDigital.RecursosDidacticos">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.RecursosDidacticos -->
+      <class name="comPageObjectsTestSaviaDigital.DiarioAprendizaje">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.DiarioAprendizaje -->
+      <class name="comPageObjectsTestSaviaDigital.EditarAnotacion">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarAnotacion -->
+      <class name="comPageObjectsTestSaviaDigital.SeguimientoAlumno">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeguimientoAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.CrearGrupo">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.CrearGrupo -->
+      <class name="comPageObjectsTestSaviaDigital.NotasCuaderno">
+        <methods>
+          <include name="NotaEnCuaderno" invocation-numbers="0"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.NotasCuaderno -->
+      <class name="comPageObjectsTestSaviaDigital.GeneradorExamenes">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.GeneradorExamenes -->
+      <class name="comPageObjectsTestSaviaDigital.CancelarEdicionGrupo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.CancelarEdicionGrupo -->
+    </classes>
+  </test> <!-- Anotaciones(failed) -->
+</suite> <!-- Failed suite [PANTALLA GENERAL DE BLOQUES] -->

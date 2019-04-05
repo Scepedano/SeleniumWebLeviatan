@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Seleccionar unidad]" parallel="tests">
+  <parameter name="browser" value="Firefox"/>
+  <test name="SelectUnidadDidactica Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarUnidadTrimestral">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarUnidadTrimestral -->
+      <class name="comPageObjectsTestSaviaDigital.SelectUnidadDidactica">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="seleccionarUnidadDidactica"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SelectUnidadDidactica -->
+    </classes>
+  </test> <!-- SelectUnidadDidactica Firefox Test(failed) -->
+  <test name="SeleccionarUnidadTrimestral Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarUnidadTrimestral">
+        <methods>
+          <include name="tearDown"/>
+          <include name="seleccionarcierreTrimestral"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarUnidadTrimestral -->
+      <class name="comPageObjectsTestSaviaDigital.SelectUnidadDidactica">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SelectUnidadDidactica -->
+    </classes>
+  </test> <!-- SeleccionarUnidadTrimestral Firefox Test(failed) -->
+</suite> <!-- Failed suite [Seleccionar unidad] -->

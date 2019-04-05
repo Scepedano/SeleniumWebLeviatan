@@ -1,0 +1,402 @@
+<html>
+<head>
+<title>TestNG:  Acciones</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Acciones</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 30 11:40:59 CEST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>116 seconds (116810 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='comPageObjectsTestSaviaDigital.AbriryDescargarRecursos.tearDown()'><b>tearDown</b><br>Test class: comPageObjectsTestSaviaDigital.AbriryDescargarRecursos</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ebe39680-37ea-4a30-8ca8-e14dfafb0163
+Command duration or timeout: 1.72 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: fc1aa955-237e-4971-a768-ec6286cd9198
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=fc1aa955-237e-4971-a768-ec6286cd9198, version=47.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:526)
+	at comPageObjectsTestSaviaDigital.SeguimientoAlumno.tearDown(SeguimientoAlumno.java:120)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ebe39680-37ea-4a30-8ca8-e14dfafb0163
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace187376840", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace187376840'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ebe39680-37ea-4a30-8ca8-e14dfafb0163
+Command duration or timeout: 1.72 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: fc1aa955-237e-4971-a768-ec6286cd9198
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=fc1aa955-237e-4971-a768-ec6286cd9198, version=47.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:526)
+	at comPageObjectsTestSaviaDigital.SeguimientoAlumno.tearDown(SeguimientoAlumno.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1023)
+	at org.testng.TestRunner.run(TestRunner.java:628)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ebe39680-37ea-4a30-8ca8-e14dfafb0163
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='comPageObjectsTestSaviaDigital.AbriryDescargarRecursos.tearDown()'><b>tearDown</b><br>Test class: comPageObjectsTestSaviaDigital.AbriryDescargarRecursos</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='comPageObjectsTestSaviaDigital.DesplegableUnidades.MostrarUnidades()'><b>MostrarUnidades</b><br>Test class: comPageObjectsTestSaviaDigital.DesplegableUnidades<br>Parameters: http://es-login.smsavia.com/, profe.qa01-auto@grupo-sm.com, 12345</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Session not found: 7412d873-059f-4da7-a141-73071c8ce5f3
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 499 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: 54225485-b5cc-4c97-801b-ceeed9e6afa7
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=54225485-b5cc-4c97-801b-ceeed9e6afa7, version=47.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at comPageObjectsTestSaviaDigital.DesplegableUnidades.MostrarUnidades(DesplegableUnidades.java:54)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 23 more
+Caused by: org.openqa.selenium.WebDriverException: Session not found: 7412d873-059f-4da7-a141-73071c8ce5f3
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12704)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9558)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9705)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9652)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12517)
+	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1729456457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1729456457'><pre>org.openqa.selenium.WebDriverException: Session not found: 7412d873-059f-4da7-a141-73071c8ce5f3
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 499 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: 54225485-b5cc-4c97-801b-ceeed9e6afa7
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=54225485-b5cc-4c97-801b-ceeed9e6afa7, version=47.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at comPageObjectsTestSaviaDigital.DesplegableUnidades.MostrarUnidades(DesplegableUnidades.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 23 more
+Caused by: org.openqa.selenium.WebDriverException: Session not found: 7412d873-059f-4da7-a141-73071c8ce5f3
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12704)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9558)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9705)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9652)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12517)
+	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/SONIA~1.CEP/AppData/Local/Temp/anonymous4460572581726344942webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+</pre></div></td>
+<td>0</td>
+<td>comPageObjectsTestSaviaDigital.DesplegableUnidades@2a44fec1</td></tr>
+<tr>
+<td title='comPageObjectsTestSaviaDigital.SeguimientoAlumno.SeguimientoAlumn()'><b>SeguimientoAlumn</b><br>Test class: comPageObjectsTestSaviaDigital.SeguimientoAlumno<br>Parameters: http://es-login.smsavia.com/, profe.qa01-auto@grupo-sm.com, 12345</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ebe39680-37ea-4a30-8ca8-e14dfafb0163
+Command duration or timeout: 1.48 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: fc1aa955-237e-4971-a768-ec6286cd9198
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=fc1aa955-237e-4971-a768-ec6286cd9198, version=47.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at comPageObjectsTestSaviaDigital.SeguimientoAlumno.SeguimientoAlumn(SeguimientoAlumno.java:53)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ebe39680-37ea-4a30-8ca8-e14dfafb0163
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1419166686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1419166686'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ebe39680-37ea-4a30-8ca8-e14dfafb0163
+Command duration or timeout: 1.48 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: fc1aa955-237e-4971-a768-ec6286cd9198
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=fc1aa955-237e-4971-a768-ec6286cd9198, version=47.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at comPageObjectsTestSaviaDigital.SeguimientoAlumno.SeguimientoAlumn(SeguimientoAlumno.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ebe39680-37ea-4a30-8ca8-e14dfafb0163
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;28APO2678&apos;, ip: &apos;10.34.48.59&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+</pre></div></td>
+<td>1</td>
+<td>comPageObjectsTestSaviaDigital.SeguimientoAlumno@4b8d0462</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='comPageObjectsTestSaviaDigital.AbriryDescargarRecursos.AbrirDecargarrREcurso()'><b>AbrirDecargarrREcurso</b><br>Test class: comPageObjectsTestSaviaDigital.AbriryDescargarRecursos<br>Parameters: http://es-login.smsavia.com/, profe.qa01-auto@grupo-sm.com, 12345</td>
+<td></td>
+<td>11</td>
+<td>comPageObjectsTestSaviaDigital.AbriryDescargarRecursos@7790ec59</td></tr>
+<tr>
+<td title='comPageObjectsTestSaviaDigital.SeleccionarLibroProfesor.SeleccionarLibroprofe()'><b>SeleccionarLibroprofe</b><br>Test class: comPageObjectsTestSaviaDigital.SeleccionarLibroProfesor<br>Parameters: http://es-login.smsavia.com/, profe.qa01-auto@grupo-sm.com, 12345</td>
+<td></td>
+<td>10</td>
+<td>comPageObjectsTestSaviaDigital.SeleccionarLibroProfesor@17b14695</td></tr>
+</table><p>
+</body>
+</html>

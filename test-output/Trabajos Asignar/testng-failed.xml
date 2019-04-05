@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Trabajos Asignar]" parallel="tests">
+  <parameter name="platform" value="windows"/>
+  <parameter name="Username" value="alumno.qa01-auto"/>
+  <parameter name="Password" value="12345"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="http://es-login.smsavia.com/"/>
+  <test name="Asignar Trabajo Fecha Valida FireFox Test(failed)" parallel="tests">
+    <parameter name="platform" value="windows"/>
+    <parameter name="Password" value="12345"/>
+    <parameter name="Username" value="profe.qa01-auto@grupo-sm.com"/>
+    <parameter name="browser" value="FireFox"/>
+    <parameter name="url" value="http://es-login.smsavia.com/"/>
+    <classes>
+      <class name="comPageObjectsTestSaviaDigital.EditarNotaTareaCreadaProfesor1">
+        <methods>
+          <include name="SetUp"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarNotaTareaCreadaProfesor1 -->
+      <class name="comPageObjectsTestSaviaDigital.EscribirAnotacionTareaRealizada">
+        <methods>
+          <include name="SetUp"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EscribirAnotacionTareaRealizada -->
+      <class name="comPageObjectsTestSaviaDigital.VistaAmpliadaForoProfesor">
+        <methods>
+          <include name="afterTest"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VistaAmpliadaForoProfesor -->
+      <class name="comPageObjectsTestSaviaDigital.AsignarTrabajoCreadoProfesor">
+        <methods>
+          <include name="afterTest"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AsignarTrabajoCreadoProfesor -->
+      <class name="comPageObjectsTestSaviaDigital.ResponderForo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.ResponderForo -->
+      <class name="comPageObjectsTestSaviaDigital.QuitarAsignacionAlumnos">
+        <methods>
+          <include name="SetUp"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.QuitarAsignacionAlumnos -->
+      <class name="comPageObjectsTestSaviaDigital.VistaAmpliadaForoAlumno">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VistaAmpliadaForoAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.VerRespuestaAlumnoForo">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VerRespuestaAlumnoForo -->
+      <class name="comPageObjectsTestSaviaDigital.ForoEntregadoNota">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.ForoEntregadoNota -->
+      <class name="comPageObjectsTestSaviaDigital.IntroducirNotaComentario1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.IntroducirNotaComentario1 -->
+      <class name="comPageObjectsTestSaviaDigital.VerTrabajoAsignado">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VerTrabajoAsignado -->
+      <class name="comPageObjectsTestSaviaDigital.AsignarTareaIndividual">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AsignarTareaIndividual -->
+      <class name="comPageObjectsTestSaviaDigital.VerAnotacionTareaRealizada">
+        <methods>
+          <include name="SetUp"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VerAnotacionTareaRealizada -->
+      <class name="comPageObjectsTestSaviaDigital.AniadirForo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AniadirForo -->
+      <class name="comPageObjectsTestSaviaDigital.CrearTareaIndividual">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.CrearTareaIndividual -->
+      <class name="comPageObjectsTestSaviaDigital.NoHayNotificaciones1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.NoHayNotificaciones1 -->
+      <class name="comPageObjectsTestSaviaDigital.AsignarTrabajoFechaValida">
+        <methods>
+          <include name="SetUp"/>
+          <include name="AsignarTrabajo" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AsignarTrabajoFechaValida -->
+    </classes>
+  </test> <!-- Asignar Trabajo Fecha Valida FireFox Test(failed) -->
+</suite> <!-- Failed suite [Trabajos Asignar] -->

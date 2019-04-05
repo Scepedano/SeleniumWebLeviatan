@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [REcursos interactivos]" parallel="tests">
+  <parameter name="platform" value="windows"/>
+  <parameter name="Username" value="profe.qa01-auto@grupo-sm.com"/>
+  <parameter name="Password" value="12345"/>
+  <parameter name="browser" value="FireFox"/>
+  <parameter name="url" value="http://es-login.smsavia.com/"/>
+  <test name="Realizar Actividad Sin Entregar(failed)" parallel="tests">
+    <parameter name="platform" value="windows"/>
+    <parameter name="Password" value="12345"/>
+    <parameter name="Username" value="alumno.qa01-auto"/>
+    <parameter name="browser" value="FireFox"/>
+    <parameter name="url" value="http://es-login.smsavia.com/"/>
+    <classes>
+      <class name="comPageObjectsTestSaviaDigital.AniadirRecursoInteractivoURL">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AniadirRecursoInteractivoURL -->
+      <class name="comPageObjectsTestSaviaDigital.ReproducirAudioAlumno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.ReproducirAudioAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.AniadirRecursoInteractivoDocumentoVisibilidadAlumno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AniadirRecursoInteractivoDocumentoVisibilidadAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.IrARecursoInteractivoExternoAlumno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.IrARecursoInteractivoExternoAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarEnlaceDocWord">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarEnlaceDocWord -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarEnlaceWebYoutube">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarEnlaceWebYoutube -->
+      <class name="comPageObjectsTestSaviaDigital.VisibilidadUrl2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VisibilidadUrl2 -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarEnlaceWebAluno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarEnlaceWebAluno -->
+      <class name="comPageObjectsTestSaviaDigital.AbrirPDFAlumno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AbrirPDFAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.RealizarActividadAutoEvalucion">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.RealizarActividadAutoEvalucion -->
+      <class name="comPageObjectsTestSaviaDigital.EditarNota1">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarNota1 -->
+      <class name="comPageObjectsTestSaviaDigital.EditarRecursoPersonalizado">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarRecursoPersonalizado -->
+      <class name="comPageObjectsTestSaviaDigital.ReproducirVideoAlumno">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.ReproducirVideoAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.FullScreenVideo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.FullScreenVideo -->
+      <class name="comPageObjectsTestSaviaDigital.NotaModificada">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.NotaModificada -->
+      <class name="comPageObjectsTestSaviaDigital.AbrirPDFProfesor">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AbrirPDFProfesor -->
+      <class name="comPageObjectsTestSaviaDigital.FullScreenVideoAlumno">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.FullScreenVideoAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.EliminarRecursoPersonalizado">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EliminarRecursoPersonalizado -->
+      <class name="comPageObjectsTestSaviaDigital.AniadirRecursoInteractivoDocumento">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AniadirRecursoInteractivoDocumento -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarEnlaceWeb">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarEnlaceWeb -->
+      <class name="comPageObjectsTestSaviaDigital.VisibilidadFichero">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VisibilidadFichero -->
+      <class name="comPageObjectsTestSaviaDigital.IntentosGuardados">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.IntentosGuardados -->
+      <class name="comPageObjectsTestSaviaDigital.IrARecursoInteractivoExterno">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.IrARecursoInteractivoExterno -->
+      <class name="comPageObjectsTestSaviaDigital.AniadirRecursoInteractivoURLConVisibilidadAlumno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.AniadirRecursoInteractivoURLConVisibilidadAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.RecursoPersonalEliminado">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.RecursoPersonalEliminado -->
+      <class name="comPageObjectsTestSaviaDigital.ReproducirVideo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.ReproducirVideo -->
+      <class name="comPageObjectsTestSaviaDigital.VisibilidadIcono_Ojo">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.VisibilidadIcono_Ojo -->
+      <class name="comPageObjectsTestSaviaDigital.ReproducirAudio">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.ReproducirAudio -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarEnlaceDocWordAlumno">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarEnlaceDocWordAlumno -->
+      <class name="comPageObjectsTestSaviaDigital.RealizarActividadSinEntregar">
+        <methods>
+          <include name="ActividadSinEntregar" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.RealizarActividadSinEntregar -->
+    </classes>
+  </test> <!-- Realizar Actividad Sin Entregar(failed) -->
+</suite> <!-- Failed suite [REcursos interactivos] -->

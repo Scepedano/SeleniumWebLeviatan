@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel test runs" duration-ms="21411" started-at="2016-09-23T10:09:20Z" finished-at="2016-09-23T10:09:41Z">
+    <groups>
+    </groups>
+    <test name="EntregarGaleria" duration-ms="21411" started-at="2016-09-23T10:09:20Z" finished-at="2016-09-23T10:09:41Z">
+      <class name="comPageObjectsTestSaviaDigital.VerImagenGaleria">
+        <test-method status="PASS" signature="SetUp(java.lang.String, java.lang.String)[pri:0, instance:comPageObjectsTestSaviaDigital.VerImagenGaleria@49b35e79]" name="SetUp" is-config="true" duration-ms="6967" started-at="2016-09-23T12:09:20Z" finished-at="2016-09-23T12:09:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="EntregarGalerias(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:comPageObjectsTestSaviaDigital.VerImagenGaleria@49b35e79]" name="EntregarGalerias" duration-ms="13903" started-at="2016-09-23T12:09:27Z" finished-at="2016-09-23T12:09:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://es-login.smsavia.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[alumno.qa01-auto]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EntregarGalerias -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:comPageObjectsTestSaviaDigital.VerImagenGaleria@49b35e79]" name="tearDown" is-config="true" duration-ms="513" started-at="2016-09-23T12:09:41Z" finished-at="2016-09-23T12:09:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- comPageObjectsTestSaviaDigital.VerImagenGaleria -->
+    </test> <!-- EntregarGaleria -->
+  </suite> <!-- Parallel test runs -->
+</testng-results>

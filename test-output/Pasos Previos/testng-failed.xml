@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Pasos Previos]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="http://es-login.smsavia.com/"/>
+  <test name="Modificar Datos Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="http://es-login.smsavia.com/"/>
+    <classes>
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarIdioma">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarIdioma -->
+      <class name="comPageObjectsTestSaviaDigital.SeleccionarIdiomaProfesor">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.SeleccionarIdiomaProfesor -->
+      <class name="comPageObjectstestSmConectados.ModificarDatos">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="ModificarDatosUsuario" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- comPageObjectstestSmConectados.ModificarDatos -->
+      <class name="comPageObjectsTestSaviaDigital.EditarPerfil">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- comPageObjectsTestSaviaDigital.EditarPerfil -->
+    </classes>
+  </test> <!-- Modificar Datos Firefox Test(failed) -->
+</suite> <!-- Failed suite [Pasos Previos] -->
